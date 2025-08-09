@@ -14,6 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
     rel="stylesheet">
 
+  <script src="moveImageContainer.js"></script>
+
   <title>Frontend Mentor | Recipe page</title>
 
 
@@ -22,111 +24,118 @@
 <body>
 
   <div id="main">
-    <div id="header">
-      <div id="img-container">
-        <img src="assets/images/image-omelette.jpeg" alt="omelette">
-      </div>
-      <div id="header-text-container">
-        <h1 class="young-serif-regular">
-          Simple Omelette Recipe
-        </h1>
-        <p class="outfit-400">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs
-          cooked
-          to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-        </p>
-      </div>
-      <div id="preparation-container">
-        <h4 class="outfit-700">
-          Preparation time
-        </h4>
-        <ul class="outfit-400">
-          <li>
-            <div class="outfit-600" style="display: inline;">Total:</div> Approximately 10 minutes
-          </li>
-          <li>
-            <div class="outfit-600" style="display: inline;">Preparation:</div> 5 minutes
-          </li>
-          <li>
-            <div class="outfit-600" style="display: inline;">Cooking:</div> 5 minutes
-          </li>
-        </ul>
-      </div>
-      <div id="ingredients-container">
-        <h3 class="young-serif-regular">Ingredients</h3>
-        <ul class="outfit-400">
-          <li>2-3 large eggs</li>
-          <li>Salt, to taste</li>
-          <li>Pepper, to taste</li>
-          <li>1 tablespoon of butter or oil</li>
-          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-    <div id="content">
-      <h3 class="young-serif-regular">Instructions</h3>
-      <ol class="outfit-400">
-        <li>
-          <span class="outfit-600">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
-          You can add a tablespoon of water or milk for a fluffier texture.
-        </li>
-        <li>
-          <span class="outfit-600">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.
-        </li>
-        <li>
-          <span class="outfit-600">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
-          the eggs evenly coat the surface.
-        </li>
-        <li>
-          <span class="outfit-600">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the
-          middle, sprinkle your chosen fillings over one half of the omelette.
-        </li>
-        <li>
-          <span class="outfit-600">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the
-          fillings. Let it cook for another minute, then slide it onto a plate.
-        </li>
-        <li>
-          <span class="outfit-600">Enjoy:</span> Serve hot, with additional salt and pepper if needed.
-        </li>
-      </ol>
-    </div>
-    <hr>
-    <div id="footer">
-      <h3 class="young-serif-regular">Nutrition</h3>
-      <p class="outfit-400">The table below shows nutritional values per serving without the additional fillings.</p>
-      <div class="nutrition-box">
-        <div class="nutrition-item outfit-400">
-          Calories
+    <div id="main-padded">
+      <div id="header">
+        <div id="img-container">
+          <img src="assets/images/image-omelette.jpeg" alt="omelette">
         </div>
-        <div class="nutrition-amount outfit-600">
-          277kcal
+        <div id="header-text-container">
+          <h1 class="young-serif-regular">
+            Simple Omelette Recipe
+          </h1>
+          <p class="outfit-400">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs
+            cooked
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+          </p>
+        </div>
+        <div id="preparation-container">
+          <h4 class="outfit-700">
+            Preparation time
+          </h4>
+          <ul class="outfit-400">
+            <li>
+              <div class="outfit-600" style="display: inline;">Total:</div> Approximately 10 minutes
+            </li>
+            <li>
+              <div class="outfit-600" style="display: inline;">Preparation:</div> 5 minutes
+            </li>
+            <li>
+              <div class="outfit-600" style="display: inline;">Cooking:</div> 5 minutes
+            </li>
+          </ul>
+        </div>
+        <div id="ingredients-container">
+          <h3 class="young-serif-regular">Ingredients</h3>
+          <ul class="outfit-400">
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          </ul>
         </div>
       </div>
       <hr>
-      <div class="nutrition-box">
-        <div class="nutrition-item outfit-400">
-          Carbs
-        </div>
-        <div class="nutrition-amount outfit-600">
-          0g
-        </div>
+      <div id="content">
+        <h3 class="young-serif-regular">Instructions</h3>
+        <ol class="outfit-400">
+          <li>
+            <span class="outfit-600">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper
+            until they are well mixed.
+            You can add a tablespoon of water or milk for a fluffier texture.
+          </li>
+          <li>
+            <span class="outfit-600">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter
+            or oil.
+          </li>
+          <li>
+            <span class="outfit-600">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs.
+            Tilt the pan to ensure
+            the eggs evenly coat the surface.
+          </li>
+          <li>
+            <span class="outfit-600">Add fillings (optional):</span> When the eggs begin to set at the edges but are
+            still slightly runny in the
+            middle, sprinkle your chosen fillings over one half of the omelette.
+          </li>
+          <li>
+            <span class="outfit-600">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge
+            and fold it over the
+            fillings. Let it cook for another minute, then slide it onto a plate.
+          </li>
+          <li>
+            <span class="outfit-600">Enjoy:</span> Serve hot, with additional salt and pepper if needed.
+          </li>
+        </ol>
       </div>
       <hr>
-      <div class="nutrition-box">
-        <div class="nutrition-item outfit-400">
-          Protein
+      <div id="footer">
+        <h3 class="young-serif-regular">Nutrition</h3>
+        <p class="outfit-400">The table below shows nutritional values per serving without the additional fillings.</p>
+        <div class="nutrition-box">
+          <div class="nutrition-item outfit-400">
+            Calories
+          </div>
+          <div class="nutrition-amount outfit-600">
+            277kcal
+          </div>
         </div>
-        <div class="nutrition-amount outfit-600">
-          20g
+        <hr>
+        <div class="nutrition-box">
+          <div class="nutrition-item outfit-400">
+            Carbs
+          </div>
+          <div class="nutrition-amount outfit-600">
+            0g
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="nutrition-box">
-        <div class="nutrition-item outfit-400">
-          Fat
+        <hr>
+        <div class="nutrition-box">
+          <div class="nutrition-item outfit-400">
+            Protein
+          </div>
+          <div class="nutrition-amount outfit-600">
+            20g
+          </div>
         </div>
-        <div class="nutrition-amount outfit-600">
-          22g
+        <hr>
+        <div class="nutrition-box">
+          <div class="nutrition-item outfit-400">
+            Fat
+          </div>
+          <div class="nutrition-amount outfit-600">
+            22g
+          </div>
         </div>
       </div>
     </div>
