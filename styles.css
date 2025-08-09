@@ -1,0 +1,259 @@
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-400 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-600 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.outfit-700 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+}
+
+body {
+  background-color: var(--Stone100);
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5vh 0;
+}
+
+#main {
+  background-color: white;
+  max-width: 500px;
+  min-height: 900px;
+  width: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+}
+
+#header {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 580px;
+  gap: 10px;
+}
+
+#img-container {
+  height: 35%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#header-text-container {
+  margin-top: 15px;
+  height: 15%;
+  width: 100%;
+}
+
+#header-text-container h1{
+  color: var(--Stone900);
+  font-size: 32px;
+}
+
+#header-text-container p{
+  color: var(--Stone600);
+  font-size: 10px;
+}
+
+#preparation-container {
+  background-color: var(--Rose50);
+  height: 20%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem; 
+  justify-content: space-around;
+}
+
+#preparation-container h4 {
+  color: var(--Rose800);
+  font-size: 14px;
+}
+
+#preparation-container ul{
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+}
+
+#preparation-container ul li{
+  color: var(--Stone600);
+  font-size: 10px;
+}
+
+#preparation-container ul li::marker{
+  color: var(--Rose800);
+  font-size: 8px;
+}
+
+#ingredients-container {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem; 
+  justify-content: space-around;
+}
+
+#ingredients-container h3 {
+  color: var(--Brown800);
+  font-size: 20px;
+}
+
+#ingredients-container ul{
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column; 
+  gap: 7px; 
+}
+
+#ingredients-container ul li{
+  color: var(--Stone600);
+  font-size: 10px;
+}
+
+#ingredients-container ul li::marker{
+  color: var(--Brown800);
+  font-size: 8px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--Stone600);
+  width: 100%;
+  transform: scaleY(0.2); 
+  transform-origin: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  min-height: 200px;
+}
+
+#content h3 {
+  color: var(--Brown800);
+  font-size: 20px;
+}
+
+#content ol{
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column; 
+  gap: 7px; 
+}
+
+#content ol li{
+  padding-left: 10px;
+  color: var(--Stone600);
+  font-size: 10px;
+}
+
+#content ol li::marker{
+  color: var(--Brown800);
+  font-size: 12px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#footer {
+  min-height: 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#footer h3 {
+  color: var(--Brown800);
+  font-size: 20px;
+}
+
+#footer p {
+  color: var(--Stone600);
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.nutrition-box {
+  width: 100%;
+  display: flex;
+}
+
+.nutrition-item {
+  width: 50%;
+  color: var(--Stone600);
+}
+
+.nutrition-amount {
+  width: 50%;
+  color: var(--Brown800);
+}
+
